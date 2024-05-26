@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed</title>   
+    <link rel="stylesheet" href="blok1.css">
+    <link rel="icon" href="https://symbl-world.akamaized.net/i/webp/c1/9a4b5216a288ab979ac04d08856edd.webp" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="bgvideo">
+            <video src="video/140111-774507949_tiny.mp4" autoplay muted loop type="video/mp4"></video>
+            <h1>Приклад</h1>
+        </div>
+    </header>
+    <nav>
+        <p>Навігація</p>
+    </nav>
+    <main>
+        <h2>Основна інформація</h2>
+        <section>
+            <article>
+                Зелене сонце плаває над бузковими горами. Веселі зірки танцюють на диванах, співаючи смарагдові пісні. Червоні риби летять у небо, а вітрини магазинів розмовляють із перехожими. Дерева вирішили переїхати на море, залишивши коріння на місяці. Місяць збирає клубніки для свого зоряного саду, де ростуть рожеві лампочки та жовті кавуни. Час обіймає хмари, що сміються як сонячні зайчики.            </article>
+        </section>
+        <section>
+            <iframe width="550" height="400" src="https://www.youtube.com/embed/iwlcaH9w-6g" title="FUNKED UP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <iframe width="550" height="400" src="https://uk.wikipedia.org/wiki/HTML" frameborder="0">wikipedia</iframe>
+        </section>
+        <section>
+            <audio src="n:\Downloads\Sunrise.mp3" controls></audio>
+        </section>
+        <section>
+            <video controls width="550" height="400">
+                <source src="video/140111-774507949_tiny.mp4">
+            </video>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126224.03267249558!2d36.21732103396787!3d49.98835855331386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0ee19a1d5d3%3A0x391e2448a558a6f!2z0KHRg9GF0L7QstCw!5e0!3m2!1suk!2sua!4v1627493898468!5m2!1suk!2sua" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
+            <canvas id="myCanvas" width="550" height="400"></canvas>
+        </section>
+    </main>
+    <aside>
+        <p>Посилання</p>
+    </aside>
+    <footer>
+        <p>Контакти</p>
+  
+        <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+    </footer>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Draw the house body
+        ctx.fillStyle = "#8B4513";
+        ctx.fillRect(150, 150, 250, 200);
+
+        // Draw the roof
+        ctx.fillStyle = "#A52A2A";
+        ctx.beginPath();
+        ctx.moveTo(125, 150);
+        ctx.lineTo(275, 50);
+        ctx.lineTo(425, 150);
+        ctx.closePath();
+        ctx.fill();
+
+        // Draw the door
+        ctx.fillStyle = "#654321";
+        ctx.fillRect(250, 250, 50, 100);
+
+        // Draw windows
+        ctx.fillStyle = "#87CEEB";
+        ctx.fillRect(180, 180, 50, 50);
+        ctx.fillRect(320, 180, 50, 50);
+        
+        // Add window crossbars
+        ctx.strokeStyle = "#8B4513";
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(205, 180);
+        ctx.lineTo(205, 230);
+        ctx.moveTo(180, 205);
+        ctx.lineTo(230, 205);
+        ctx.moveTo(345, 180);
+        ctx.lineTo(345, 230);
+        ctx.moveTo(320, 205);
+        ctx.lineTo(370, 205);
+        ctx.stroke();
+    </script>
+</body>
+</html>
